@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Album de familia</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <center>
+    <p id="inicio">Meu album da familia</p>
+    <br>
+    <img id="foto" src="tudo.jpg" style="width: 30%;">
+    <p id="texto">Meu album</p>
+    <button onclick="prox();">Próximo</button>
+    <script>
+         var imagens = ["pedro.jpg", "julia.jpg", "bethoven.jpg", "sharif.jpg", "Emile.jpg"] 
+        var nomes = [ "Pedro", "Julia", "Bethoven", "Sharif", "Emile"]
+
+        var i = 0;
+        function prox(){
+            i++;
+            var quantidade = 4;
+            if (i> quantidade){
+                i = 0;
+            }
+            var imgnova = imagens[i];
+            var nomenovo = nomes[i];
+            document.getElementById("foto").src = imgnova;
+            document.getElementById("texto").innerHTML = nomenovo;
+        }
+    </script>
+</center>
+</body>
+</html>

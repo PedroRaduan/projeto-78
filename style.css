@@ -1,0 +1,13 @@
+*{
+    background-color: aqua;
+}
+
+button{
+    width: 200px;
+    background-color: blue;
+    color: aliceblue;
+}
+
+p{
+    font-size: 20px;
+}
